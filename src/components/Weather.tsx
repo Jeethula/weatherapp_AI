@@ -34,7 +34,7 @@ const Weather: React.FC = () => {
         <form onSubmit={handleSubmit} className="mb-6">
           <input
             type="text"
-            placeholder="Enter Zip Code"
+            placeholder="Enter City Name"
             value={zipCode}
             onChange={(e) => setZipCode(e.target.value)}
             className="border p-2 rounded w-full"
