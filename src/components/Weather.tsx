@@ -12,7 +12,7 @@ const Weather: React.FC = () => {
   const fetchWeatherData = async () => {
     setLoading(true);
     try {
-      const response = await axios.get(`http://api.weatherapi.com/v1/current.json?key=4cc34f97f9374a11bdf153533242409&q=${zipCode}&aqi=no`);
+      const response = await axios.get(`https://api.weatherapi.com/v1/current.json?key=4cc34f97f9374a11bdf153533242409&q=${zipCode}&aqi=no`);
       setWeatherData(response.data);
       console.log("Weather Data", response.data);
     } catch (error) {
